@@ -3,6 +3,7 @@
 This program applies filters to images. Like those in Instagram or any other image processing applications. The program is capable to apply grayscale, sepia, blur and reflect filters to the image provided by the user as command line input and saves the resulting image as a separate file.
 
 Usage: ./filter -[first letter of filter name] [input image address] [output image address (including file name and extension)]
+
 Example: ./filter -r image.bmp reflected.bmp 
 
 The algorithm:

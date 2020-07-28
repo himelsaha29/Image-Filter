@@ -16,9 +16,11 @@ For this effect, the red, green, and blue channels of each pixel is assigned a n
   sepiaRed = .393 * originalRed + .769 * originalGreen + .189 * originalBlue
   sepiaGreen = .349 * originalRed + .686 * originalGreen + .168 * originalBlue
   sepiaBlue = .272 * originalRed + .534 * originalGreen + .131 * originalBlue
+
+Each value is rounded to the nearest integer. In case the value is greater than 255, it is assigned a value of 255 instead.
   
 # Reflection: 
-This effect involves swapping the individual pixels of an image to its symmetrically (vertical orientation) opposite one for reflection along the vertical axis.
+This effect involves swapping the individual pixels of an image to its symmetrically (vertical) opposite one for reflection along the vertical axis.
 
 # Blur: 
 Each pixel is given a new RGB value by taking average of the RGB values of the pixels around it that are within 1 row and 1 column (itself included). This can be imagined by 3x3 boxes for pixels rounghly in the middle of the image and 2x3 or 3x2 or 2x2 boxes for pixels on the edges.

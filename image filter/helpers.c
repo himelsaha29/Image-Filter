@@ -1,6 +1,12 @@
 #include "helpers.h"
 #include <math.h>
 
+/**
+ *
+ * @author HimelSaha
+ */
+
+
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
@@ -180,5 +186,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             image[i][j].rgbtRed = temp_img[i][j].rgbtRed;
         }
     }
+
+
     return;
 }
